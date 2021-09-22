@@ -1,0 +1,43 @@
+/* p{
+    padding: 1rem;
+    border: solid red;
+} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="number"],select, textarea{
+    background-color: rgb(235, 235, 235);
+    width: 35rem;
+    font-size: 1.1rem;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    display: inline-block;
+    width: 6rem;
+}
+
+.btn{
+    width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: .2rem;
+    margin: .5rem;
+    border: none;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: rgb(43, 163, 163);
+    color: white;
+}
+
+.btn-danger{
+    background-color: red;
+    color: white;
+}

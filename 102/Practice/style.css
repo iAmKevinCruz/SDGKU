@@ -1,0 +1,36 @@
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 30vw;
+    height: 5vh;
+}
+td span{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+tr:nth-child(odd){
+    background-color: palevioletred;
+}
+tr:nth-child(even){
+    background-color: rgb(224, 185, 198);
+}
+tr:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+td{
+    text-align: center;
+    /* background-color: aquamarine; */
+    height: 2rem;
+}
+th{
+    background-color: rgb(58, 87, 126);
+    color: white;
+}
+
+table.challenge{
+    width: 40rem;
+}

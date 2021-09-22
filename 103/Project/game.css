@@ -1,0 +1,21 @@
+button{
+    margin: 2rem 0;
+    border-radius: 5px;
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    transition: box-shadow .5s ease-in-out, transform .5s ease-in-out,font-weight .5s;
+}
+button:hover{
+    box-shadow: 5px 5px 10px black;
+    transform: translateY(-2px);
+}
+.btn{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #b8d3f0;
+    color: white;
+    border:none;
+}

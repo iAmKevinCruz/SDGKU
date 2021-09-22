@@ -1,0 +1,78 @@
+:root{
+    --color1: #e27d60;
+    --color2: #85dcb0;
+    --color3: #e8a87c;
+    --color4: #c38d9e;
+    --color5: #41b3a3;
+    --greyish: #e6e5ea;
+}
+
+/* HEADER */
+header{
+    background-color: var(--color1);
+}
+.jiggle:hover{
+    animation-name: jiggle;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+}
+@keyframes jiggle {
+    33%  {transform: rotate(.02turn);}
+    66%  {transform: rotate(-.02turn);}
+}
+.hoverBar{
+    border-top: 2px solid var(--color3);
+    background-image:linear-gradient(var(--color3),var(--color3));
+    background-repeat: no-repeat;
+    background-size: 10% 0;
+    background-position: 50% 0;
+}
+.hoverBar:hover{
+    animation-name: hoverBar;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes hoverBar {
+    75%  {background-size: 1% 100%;}
+    100% {background-size: 100% 100%;}
+}
+
+/* BODY */
+.regLink{
+    color: var(--color1);
+}
+#form{
+    padding: 1rem;
+}
+
+
+
+/* COLORS */
+.colors{
+    color: #e27d60;
+    color: #85dcb0;
+    color: #e8a87c;
+    color: #c38d9e;
+    color: #41b3a3;
+
+    color: #6b88a6;
+    color: #88bbb1;
+    color: #bbded3;
+    color: #e6e5ea;
+    color: #aaa0bb;
+    
+}
+
+/* Thrown Out Code */
+/* .nav-item{
+    border-top: 2px solid var(--color3);
+    background-image:linear-gradient(var(--color3),var(--color3));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position: 50% 0;
+    transition: background-size .25s ease-in-out;
+} */
+/* .nav-item:hover{
+    background-size: 100% 100%;
+} */

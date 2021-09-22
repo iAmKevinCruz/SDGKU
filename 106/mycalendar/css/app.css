@@ -1,0 +1,51 @@
+/* Task:
+
+    title
+    important (icon)
+    dueDate   (date picker)
+    location
+    priority (select)
+    color    (color picker)
+    contact
+    description  (text area) */
+
+:root{
+    --blue: #30BCED;
+    --grey: #303036;
+    --white: #FFFAFF;
+    --orange: #FC5130;
+    --black: #050401;
+}
+
+/* HEADER */
+header{
+    background-color: var(--black);
+}
+h1{
+    color: var(--white);
+}
+
+/* BODY */
+.container-fluid{
+    display: flex;
+}
+.section-list{
+    flex:3;
+}
+.section-form{
+    flex: 2;
+}
+#iconImportant{
+    color: var(--blue);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color .125s ease-in-out;
+}
+#iconImportant:hover{
+    color: #0dd4ee;
+}
+
+/* FOOTER */
+
+
+/* UTILITIES */

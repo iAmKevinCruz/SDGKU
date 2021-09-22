@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 2 CSS</title>
+
+
+<!-- This is using selectors in Internal CSS - Used only in HEAD section-->
+    <style>
+        h1{ font-family: Arial, Helvetica, sans-serif; 
+            color: blue;} /*Assigns attributes to all H1 unless the H1 already has attributes*/
+       
+        p{  font-family: cursive; 
+            color: red}
+
+        /*ID selector - Use #variable */
+        #title{/*Use this as a unique variable kinda. Dont want to use as a Class*/ 
+                font-size:20px; 
+                color: orangered;}
+
+        /*Class selector - Use .variable */
+        .textsize{/*Use this basically as a variable*/
+                font-size: 38px; 
+                color:cornflowerblue}
+
+    </style>
+
+</head>
+
+
+<body style="font-family: fantasy;">
+
+    <h1 class="textsize">CSS Heading Test</h1> <!--Example of Class-->
+    <p id="title"> This is a test Paragrah</p> <!-- Example of ID-->
+    <p style="font-size:16px;color:rgba(245, 218, 68, 0.815)">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolorem odio velit excepturi magni, vero odit molestias pariatur, in modi quam sint maxime molestiae, ipsam laboriosam labore sunt quia placeat!</p>
+    <h2 style="font-size:50px;">Sub Title</h2>
+
+<!-- This is In-Line CSS Below -->
+<!-- Uses attributes given every line or per division-->
+    <div style="background-color: grey; padding: 0; margin:auto;width:450px;font-family: Arial, Helvetica, sans-serif;"> <!--Width is the size of the box for this div, so the background color is constrained to this px size-->
+        <h1 style="color:black; padding:0">This is Test for InLine CSS</h1>
+        <h2 style="color:rgba(0, 0, 0, 0.671); margin-bottom: 0;">This is Test for InLine CSS</h2>
+        <h3 style="color:rgba(0, 0, 0, 0.452)">This is Test for InLine CSS</h3>
+        <h4 style="color:rgba(0, 0, 0, 0.281)">This is Test for InLine CSS</h4>
+        <h5 style="color:rgba(0, 0, 0, 0.123)">This is Test for InLine CSS</h5>
+
+    </div>
+
+<!-- This is Internal CSS -->
+<!-- These follow instructions in the HEAD portion -->
+    <div>
+
+    <h1>CSS Internal Test</h1>
+    <p> This is a test Paragrah</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolorem odio velit excepturi magni, vero odit molestias pariatur, in modi quam sint maxime molestiae, ipsam laboriosam labore sunt quia placeat!</p>
+    <h2">Sub Title</h2>
+
+
+    </div>
+
+    
+
+</body>
+</html>
+
+<!---->

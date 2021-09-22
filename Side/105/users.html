@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Users</title>
+</head>
+<body>
+    <header class="d-flex align-items-center bg-dark">
+        <h1 class="display-1 col text-white-50">Users</h1>
+        <nav class="row">
+            <a href="index.html">Home</a>
+            <a href="users.html">Users</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="display-1 text-center mb-5">Users</h1>
+
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Payment</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody id="tblUsers"></tbody>
+            </table>
+            <div>
+                <button class="btn btn-dark" id="dltBtn">Clear Users</button>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script/storeManager.js"></script>
+    <script src="script/list.js"></script>
+</body>
+</html>

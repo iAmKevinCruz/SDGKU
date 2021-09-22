@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{ font-family: Arial, Helvetica, sans-serif; 
+    color: blue;} /*Assigns attributes to all H1 unless the H1 already has attributes*/
+
+p{   
+    color: red;
+    font-weight:bolder;
+}
+
+/*ID selector - Use #variable */
+#title{/*Use this as a unique variable kinda. Dont want to use as a Class*/ 
+        font-size:20px; 
+        color: orangered;}
+
+/*Class selector - Use .variable */
+.textsize{/*Use this basically as a variable*/
+        font-size: 38px; 
+        color:cornflowerblue}
+
+
+h2{ font-family: fantasy;
+    font-size: 20 px;
+    color: pink;
+    word-spacing: 10px;
+}
+
+.text-p{ color: hotpink;
+         font-size: 28px;
+         text-align: center;
+}
+
+.text-a{color: skyblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+
+h1, h2{text-transform:uppercase;
+        text-decoration: underline;
+}
+
+h1{
+    text-shadow: 2px 3px slateblue;
+    letter-spacing: 10px;
+    font-weight: bold;
+}

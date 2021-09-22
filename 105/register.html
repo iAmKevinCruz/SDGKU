@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Users</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-center display-3 text-light" id="title">Register a User in the system</h1>
+
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item hoverBar">
+          <a class="nav-link text-light jiggle" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item hoverBar">
+          <a class="text-light nav-link jiggle" href="users.html">Users</a>
+        </li>
+        <li class="nav-item hoverBar">
+          <a class="text-light nav-link jiggle active" href="register.html">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="card container shadow bg-light mt-3" id="form">
+    <h3 class="text-center mb-4">User Information</h3>
+    <div class="row mb-3 control">
+        <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-10">
+          <input type="username" class="form-control" id="inputUsername">
+        </div>
+    </div>
+    <div class="row mb-3 control">
+      <label for="inputFirstName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-5">
+        <input type="first name" class="form-control" id="inputFirstName" placeholder="First Name">
+      </div>
+      <div class="col-sm-5">
+        <input type="last name" class="form-control" id="inputLastName" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="row mb-3 control">
+      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail">
+    </div>
+    </div>
+    <div class="row mb-3 control">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword">
+    </div>
+    </div>
+    <div class="row mb-3 control">
+        <label for="inputDOB" class="col-sm-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="inputDOB">
+        </div>
+    </div>
+    <div class="row mb-3 control">
+        <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+          <input type="address" class="form-control" id="inputAddress">
+        </div>
+    </div>
+    <fieldset class="row mb-3" id="paymentSelect">
+      <legend class="col-form-label col-sm-2 pt-0">Payment Method</legend>
+      <div class="col-sm-10 control">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="paypal" value="paypal">
+          <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+        <div class="form-check control">
+          <input class="form-check-input" type="radio" name="radio" id="visa" value="visa">
+          <label class="form-check-label" for="visa">Visa</label>
+        </div>
+        <div class="form-check control">
+          <input class="form-check-input" type="radio" name="radio" id="bitcoin" value="bitcoin" checked>
+          <label class="form-check-label" for="bitcoin">₿itcoin</label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="mb-3 row">
+      <label for="color" class="col-sm-2 col-form-label">Color</label>
+      <input type="color" id="txtColor" class="form-control form-control-color">
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-primary" id="btnSave">Register User</button>
+    </div>
+  </div>
+
+  <div class="container mt-4 alert alert-success" role="alert" id="alert">
+    <p class="text-center">Success! User Registered 😀</p>
+  </div>
+
+  <div id="users"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/register.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>

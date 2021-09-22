@@ -1,0 +1,155 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+html{
+    font-size: 62.5%; /*10px*/
+}
+
+*{
+    margin: 0;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+h1{
+    font-size: 5.6rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Use this to change attributes for varying devices*/
+/* @media(min-width: 768px){ 
+    body{
+        background-color: peachpuff;
+    }
+}*/
+
+    /* utilities */
+.container{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    /* header */
+.index-header{
+    background-color: rgb(79, 150, 12);
+    height: 40vh;
+    text-align: center;
+}
+
+    .index-header i{
+        font-size: 40px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    /* footer */
+footer{
+    background-color: rgb(79, 150, 12);
+}
+
+.menu{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+    .menu a{
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: lighter;
+        color: black;
+        margin-right: 2rem;
+    }
+
+    /* This changes the attributes when you hover over the text */
+    .menu a:hover{
+        font-weight: 700;
+    }
+
+.willpic{
+    display: block; /* BLOCK means take up all the space on that line*/
+    border-radius: 10%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 3px solid black;
+    width: 20rem; 
+    height: 30.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Education */
+li {
+    font-size: 1.6rem;
+}
+ul.list-1{
+    background-color: antiquewhite;
+    padding: 2rem;
+}
+ul.list-1 li{
+    background-color: aqua;
+    margin: 1rem;
+    padding: 1rem;
+    width: 30rem;
+    list-style-type: square;
+}
+ul.list-1 li:hover, ul li:hover a{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+ul.list-1 li a{
+    text-decoration: none;
+    color: black;
+}
+ol.list-1{
+    list-style-type: lower-roman;
+    background: olive;
+    padding:1rem;
+}
+ol.list-1 li{
+    color: white;
+    padding: 1rem;
+    border: .1rem dashed black;
+    width: 15rem;
+    margin: 1rem;
+}
+
+/* Projects */
+img.project-img{
+    width: 10rem;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/* Contact */
+.contact{
+    background-image: url(https://miro.medium.com/max/1094/1*MCn1VrXQznTi3JMtAIGK0g.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+}
+.contact p{
+    text-align: center;
+}

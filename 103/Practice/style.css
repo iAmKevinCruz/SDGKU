@@ -1,0 +1,11 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.bordered{
+    border: 1px solid black;
+    padding:1rem;
+    width: 10rem;
+    height: 10rem;
+}

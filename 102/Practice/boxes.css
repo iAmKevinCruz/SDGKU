@@ -1,0 +1,48 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* .flex-container only affects the first level of children */
+/* Justify-content and align-item work in opposition depending on the flex-direction */
+/* flex-basis is width */
+
+.flex-element{
+    flex-basis: 15rem;
+    background-color: limegreen;
+    color: yellow;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 2rem;
+    height: 5rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*repeat(x,y) x=number of colomns y=fractions*/
+    column-gap: 1rem;
+}
+
+.grid-element{
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+body{
+    background-color: red;
+}
+
+@media(min-width:768px){
+    body{
+        background-color: purple;
+    }
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

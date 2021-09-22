@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Users</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1 text-center text-light">Users</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+              <li class="nav-item hoverBar">
+                <a class="nav-link text-light jiggle" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item hoverBar">
+                <a class="text-light nav-link jiggle active" href="users.html">Users</a>
+              </li>
+              <li class="nav-item hoverBar">
+                <a class="text-light nav-link jiggle" href="register.html">Register</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <h2 class="display-5 text-center mt-3">Current Users In the System</h1>
+        <div class="container">
+            <table class="table table-hover" id="fullTbl">
+                <caption id="tblCaption"></caption>
+                <thead>
+                    <tr id="tblHeaders">
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>DoB</th>
+                        <th>Address</th>
+                        <th>Payment</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody id="tblUsers">
+
+                </tbody>
+            </table>
+            <div id="noUserAlert">
+                <h3 class="alert text-center alert-light">Oops!<br>
+                    Looks like there are no registered users. Bummer!<br> Please travel to the <a href="register.html" class="link regLink">Register</a> page to add users.</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="btnClear" class="btn btn-danger">Clear Users</button>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/list.js"></script>
+
+</body>
+</html>
