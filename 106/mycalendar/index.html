@@ -11,18 +11,39 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <h1 class="display-1">Hello</h1>
+    <header class="d-flex justify-content-between align-items-center">
+        <h1 class="display-5">myTasks</h1>
+        <div>
+            <button id="btnToggleForm" class="btn btn-secondary">HideForm</button>
+            <button id="btnClear" class="btn btn-danger me-3">Clear ALL</button>
+        </div>
+        
     </header>
 
     <!-- BODY -->
-    <main class="container-fluid">
-        <section class="section-list">
+    <main class="container-fluid pt-3">
+        <!-- <div id="noTaskAlert">
+            <p class="display-6 text-secondary bg-light no-task text-center">Oops! Looks like you don't have any pending or completed tasks. <br><br>Use the form on the right to create new tasks.</p>
+        </div> -->
+        <section id="sectionList" class="section-list me-3">
+            <div id="pendingTasks" class="pending-tasks">
+                <h3>Pending Tasks</h3>
+                <!-- <div id="noPendingAlert">
+                    <p class="no-task bg-light text-center text-secondary">You don't have any pending tasks.</p>
+                </div> -->
+            </div>
+            
+            <div id="completedTasks" class="completed-tasks">
+                <h3>Completed Tasks</h3>
+                <!-- <div id="noCompletedAlert">
+                    <p class="no-task bg-light text-center text-secondary">You haven't completed any tasks.</p>
+                </div> -->
+            </div>
 
         </section>
 
-        <section class="section-form">
-            <div class="form">
+        <section id="sectionForm" class="section-form shadow">
+            <div class="form px-3 py-3">
                 <div class="mb-3">
                     <label for="titleInput" class="form-label">Title</label>
                     <input id="titleInput" type="text" class="form-control">
@@ -42,9 +63,9 @@
                 <div class="mb-3">
                     <label for="priorityInput" class="form-label">Priority</label>
                     <select name="priorityInput" id="priorityInput" class="form-select">
-                        <option value="1">Low</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Important</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
                     </select>
                 </div>
                 <div class="mb-3">

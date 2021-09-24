@@ -1,13 +1,3 @@
-/* Task:
-
-    title
-    important (icon)
-    dueDate   (date picker)
-    location
-    priority (select)
-    color    (color picker)
-    contact
-    description  (text area) */
 
 :root{
     --blue: #30BCED;
@@ -15,25 +5,71 @@
     --white: #FFFAFF;
     --orange: #FC5130;
     --black: #050401;
+    --color1: #fc845f;
+    --color2: #deb782;
+    --color3: #215ca0;
+    --color4: #010427;
+    --colorA: #413846;
+    --colorB: #8D6176;
+    --colorC: #DB8E5A;
+    --colorD: #E58D67;
+    --colorE: #F2C258;
+    --colorF: #F3EAAA;
+    --colorG: #52BBD6;
+    --colorH: #E3E7E0;
 }
 
 /* HEADER */
 header{
-    background-color: var(--black);
+    background-color: var(--colorA);
+    opacity: .9;
+}
+header:hover{
+    opacity: 1;
 }
 h1{
     color: var(--white);
 }
+#btnHideForm{
+    height: 30%;
+}
 
 /* BODY */
+body{
+    background-image: url("../img/sunmountain.jpg");
+    background-image: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.no-task{
+    border-radius: 3px;
+    padding: 4px;
+    opacity: .8;
+    justify-content: center;
+    align-items: center;
+}
 .container-fluid{
     display: flex;
 }
 .section-list{
-    flex:3;
+    flex:6;
+}
+.currentTask{
+    border-radius: 5px;
+    background-color: var(--white);
+    opacity: .8;
+}
+.currentTask:hover{
+    opacity: 1;
 }
 .section-form{
-    flex: 2;
+    flex: 3;
+    border-radius: 5px;
+    background-color: var(--white);
+    opacity: .8;
+}
+.section-form:hover{
+    opacity: 1;
 }
 #iconImportant{
     color: var(--blue);
@@ -43,6 +79,35 @@ h1{
 }
 #iconImportant:hover{
     color: #0dd4ee;
+}
+
+/* Tasks Display */
+.currentTask{
+    display: flex;
+    align-items: center;
+}
+.taskStar{
+    color: var(--blue);
+    margin-right: 3px;
+}
+.dueDate{
+    color: var(--orange);
+}
+.divider{
+    margin: 4px 0;
+}
+.secondaryInfo{
+    font-size: .8rem;
+    color: 
+}
+.red{
+    color: red;
+}
+.left{
+    flex: 9;
+}
+.btnDone{
+    height: 45px;
 }
 
 /* FOOTER */

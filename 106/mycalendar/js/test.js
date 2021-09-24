@@ -54,3 +54,30 @@ function testObj(){
     console.log(fang.roar());
     console.log(fido.name);
 }
+
+function testReq(){
+    $.ajax({
+        type: `GET`,
+        url: `http://restclass.azurewebsites.net/api/test`,
+        success: function(res){
+            console.log(`Request OK`,res);
+        },
+        error: function(error){
+            console.log(`Request Failed D:`,error);
+        },
+    });
+}
+
+
+function safeKeep(){
+//     <div class="currentTask mb-3">
+//     <h6>${task.title}</h6>
+//     <label>${task.location}</label>
+//   </div>
+}
+
+function testTime(){
+    var isoStr = new Date().toISOString();
+    let test = $('#dueDate').val(isoStr);
+    console.log(test);
+}
